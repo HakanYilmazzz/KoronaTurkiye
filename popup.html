@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .covid-around section {
+        width: 350px;
+      }
+      .covid-around section.loading {
+        min-height: 200px;
+        background: url('/images/corona.gif') center center no-repeat;
+        position: relative;
+      }
+      .covid-around section.loading:before {
+        width: 50px;
+        height: 20px;
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+        top: 50px;
+        font-weight: bold;
+        content: 'Yenileniyor...'
+      }
+      .covid-around section.loading div, section.loading h3 {
+        display: none;
+      }
+      .covid-around h3 {
+        font-size: 20px;
+        margin: 0;
+        margin-left: 5px;
+        padding-bottom: 10px;
+        color: #333333;
+      }
+      .covid-around div {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 5px;
+        margin-bottom: 5px;
+        color: #fff;
+      }
+      .covid-around div:last-child {
+        margin-bottom: 0;
+      }
+      .covid-around i {
+        display: inline-block;
+        width: 25px;
+        margin-right: 10px;
+        text-align: center;
+      }
+      .covid-around .confirmed {
+        background: #00d2ff; 
+        background: -webkit-linear-gradient(to right, #00d2ff, #928dab); 
+        background: linear-gradient(to right, #00d2ff, #928dab); 
+      }
+      .covid-around .active {
+        background: #00d2ff; 
+        background: -webkit-linear-gradient(to right, #00d2ff, #928dab);
+        background: linear-gradient(to right, #00d2ff, #928dab);
+      }
+      .covid-around .recovered {
+        background: #4cb8c4; 
+        background: -webkit-linear-gradient(to right, #4cb8c4, #3cd3ad); 
+        background: linear-gradient(to right, #4cb8c4, #3cd3ad); 
+      }
+      .covid-around .deaths {
+        background: #ed213a; 
+        background: -webkit-linear-gradient(to right, #ed213a, #93291e); 
+        background: linear-gradient(to right, #ed213a, #93291e); 
+      }
+      .covid-around .death-rate {
+        background: #fc5c7d; 
+        background: -webkit-linear-gradient(to right, #fc5c7d, #6a82fb); 
+        background: linear-gradient(to right, #fc5c7d, #6a82fb); 
+      }
+      .covid-around .care-rate {
+        background: #fc5c7d; 
+        background: -webkit-linear-gradient(to right, #fc5c7d, #6a82fb); 
+        background: linear-gradient(to right, #fc5c7d, #6a82fb); 
+      }
+      .covid-around .tests {
+        background: #6fda7e; 
+        background: -webkit-linear-gradient(to right, #b1fc5c, #92da34); 
+        background: linear-gradient(to right, #97fc5c, #78cc5e); 
+      }
+      .covid-around .critical {
+        background: #6fda7e; 
+        background: -webkit-linear-gradient(to right, #b1fc5c, #92da34); 
+        background: linear-gradient(to right, #91e062, #82d668); 
+      }
+      .covid-around .yazi {
+        font-size: 14px;
+        background: #afb6b0; 
+        background: -webkit-linear-gradient(to right, #a1a1a0, #d0d1d0); 
+        background: linear-gradient(to right, #6a6b6a, #cacec9); 
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/regular.min.css">
+    <link rel="stylesheet" type="text/css" href="css/solid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/brands.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/background.js"></script>
+  </head>
+  <body class="covid-around">
+    <section>
+      <h3 class="countryInfo"></h3>
+      <div class="confirmed"><i class="fa fa-biohazard"></i>Toplam Vaka Sayısı: <span id="confirmed"/></div>
+      <div class="confirmed"><i class="fa fa-biohazard"></i>Bugünkü Vaka Sayısı: <span id="confirmedtoday"/></div>
+      <div class="active"><i class="fa fa-biohazard"></i>Aktif Vaka Sayısı: <span id="active"/></div>
+      <div class="recovered"><i class="fa fa-heartbeat"></i>İyileşen Hasta Sayısı: <span id="recovered"/></div>
+      <div class="deaths"><i class="fa fa-skull"></i>Toplam Ölüm Sayısı: <span id="deaths"></span></div>
+      <div class="deaths"><i class="fa fa-skull"></i>Bugün Ölüm Sayısı: <span id="deathstoday"/></div>
+      <div class="death-rate"><i class="fa fa-percent"></i>Ölüm Oranı: <span id="deathrate"></span></div>
+      <div class="care-rate"><i class="fa fa-percent"></i>İyileşme Oranı: <span id="carerate"></span></div>
+      <div class="tests"><i class="fa fa-medkit"></i>Toplam Test Sayısı: <span id="tests"></span></div>
+      <div class="critical"><i class="fa fa-bed"></i>Yoğun Bakımdaki Hasta Sayısı: <span id="critical"></span></div>
+      <div class="yazi"><span><p>Veriler akşam saatlerinde otomatik yenilenmektedir.</p></span></div>
+    </section>
+  </body>
+</html>
