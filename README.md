@@ -10,3 +10,10 @@ Korona Virüs Son durumu hakkında Popup bilgi veren basit bir Chrome eklentisid
 * Paketlenmemiş öğe yükle butonuna tıklayarak dosyaları yükleyin.
 * Sağ üst tarafta eklenti ikonu (yeşil Virüs) gözükmeye başladı.
 * İkona tıklayarak verilere ulaşabilirsiniz.
+
+# Yapılacaklar Listesi
+
+- [ ] Badge ile verilerin gösterilmesi
+- [ ] Yeni veriler girildiğinde uyarı verilmesi
+- [ ] Seçilen ülke ile veri karşılaştırması
+- [ ] Verilerin grafiksel olarak gösterilmesi 
