@@ -2,7 +2,7 @@
 Korona Virüs Son durumu hakkında Popup bilgi veren basit bir Chrome eklentisidir. Veriler API'den çekilerek , yeni veriler eklendikçe otomatik olarak güncellenmektedir.
 
 # Ekran Görüntüsü
-![all text](https://i.hizliresim.com/rbwQKD.png)
+![Title](https://github.com/HakanYilmazzz/KoronaTurkiye/blob/master/images/images.png)
 
 # Kurulum
 * Dosyaları bilgisayarınıza kopyalayın
